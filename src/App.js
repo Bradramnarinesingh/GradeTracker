@@ -55,7 +55,9 @@ function App() {
 
   return (
     <div className="App">
-      <nav className={`navbar navbar-expand-lg navbar fixed-top ${navbarClass()}`}>
+      <nav
+        className={`navbar navbar-expand-lg navbar fixed-top ${navbarClass()}`}
+      >
         <a className="navbar-brand" href="#home">
           <img src={logo} height="30" alt="logo" />
           Grade Tracker
@@ -77,10 +79,14 @@ function App() {
         >
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#home">Home</a>
+              <a className="nav-link" href="#home">
+                Home
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#features">Features</a>
+              <a className="nav-link" href="#features">
+                Features
+              </a>
             </li>
           </ul>
           <button className="btn btn-danger sign-in-btn">Sign In</button>
@@ -99,7 +105,11 @@ function App() {
           {features.map((feature, index) => (
             <div className="col-md-4" key={index}>
               <div className="card">
-                <img src={feature.img} className="card-img-top" alt={feature.title} />
+                <img
+                  src={feature.img}
+                  className="card-img-top"
+                  alt={feature.title}
+                />
                 <div className="card-body">
                   <h5 className="card-title">{feature.title}</h5>
                   <p className="card-text">{feature.description}</p>

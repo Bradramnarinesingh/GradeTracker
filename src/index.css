@@ -162,7 +162,8 @@ p {
     top: 10px;
     position: fixed;
     transition: all 0.2s ease-in-out; /* Smooth transition for all changes */
-    top: 0px;
+    top: 5px;
+    transition: background-color 0.3s ease; /* Transition for background color changes */
   }
 
   .navbar-scrolled {
@@ -183,9 +184,14 @@ p {
     top: 15px;
   }
 
+  .navbar.navbar-expand-lg.fixed-top.navbar-top {
+    transition: all 0.2s ease-in-out; /* Smooth transition for all changes */
+  }
+
   /* Applying a blue background color when the navbar is toggled at the top */
   .navbar.navbar-expand-lg.fixed-top.navbar-top-clicked {
-    background-color: #212529bd !important; /* Blue color */
+    background-color: #212529bd !important;
+    transition: all 0.2s ease-in-out; /* Smooth transition for all changes */
   }
 
   .nav-link {
