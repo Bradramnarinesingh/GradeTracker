@@ -157,7 +157,7 @@ p {
 
   .navbar {
     width: 100%;
-    background-color: #21252900 !important; /* Semi-transparent black for scrolled state */
+    background-color: #21252900 !important;
     border-radius: 0; /* No border radius */
     top: 10px;
     position: fixed;
@@ -242,10 +242,7 @@ p {
     outline: none;
     box-shadow: none;
   }
-
-  .navbar-toggler:active .toggler-bar {
-    background-color: rgb(154, 153, 153);
-  }
+  
   .sign-in-btn {
     margin: 0 auto;
     margin-bottom: 10px;
