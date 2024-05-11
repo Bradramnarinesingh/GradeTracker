@@ -8,7 +8,6 @@ import setGoals from "./setGoals.webp"; // Image for Set Goals
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isNavbarClicked, setIsNavbarClicked] = useState(false); // State to track navbar click
 
   const features = [
     {
@@ -33,30 +32,30 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Function to handle navbar click
-  const handleNavbarClick = () => {
-    setIsNavbarClicked(!isNavbarClicked); // Toggle navbar click state
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen); // Toggle the state of the navbar
+  };
+
+  const navbarClass = () => {
+    if (!isScrolled && isOpen) {
+      return "navbar-top-clicked";
+    } else if (isScrolled) {
+      return "navbar-scrolled";
+    } else {
+      return "navbar-top";
+    }
   };
 
   return (
-    <div className={`App ${isNavbarClicked ? "navbar-clicked" : ""}`}>
-      <nav
-        className={`navbar navbar-expand-lg navbar-dark bg-dark fixed-top ${
-          isScrolled ? "navbar-scrolled" : "navbar-top"
-        }`}
-      >
+    <div className="App">
+      <nav className={`navbar navbar-expand-lg navbar fixed-top ${navbarClass()}`}>
         <a className="navbar-brand" href="#home">
           <img src={logo} height="30" alt="logo" />
           Grade Tracker
@@ -64,10 +63,7 @@ function App() {
         <button
           className={`navbar-toggler ${isOpen ? "open" : ""}`}
           type="button"
-          onClick={() => {
-            setIsOpen(!isOpen);
-            handleNavbarClick();
-          }} // Call handleNavbarClick on click
+          onClick={toggleNavbar}
           aria-controls="navbarNav"
           aria-expanded={isOpen ? "true" : "false"}
           aria-label="Toggle navigation"
@@ -81,14 +77,10 @@ function App() {
         >
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#home">
-                Home
-              </a>
+              <a className="nav-link" href="#home">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#features">
-                Features
-              </a>
+              <a className="nav-link" href="#features">Features</a>
             </li>
           </ul>
           <button className="btn btn-danger sign-in-btn">Sign In</button>
@@ -107,11 +99,7 @@ function App() {
           {features.map((feature, index) => (
             <div className="col-md-4" key={index}>
               <div className="card">
-                <img
-                  src={feature.img}
-                  className="card-img-top"
-                  alt={feature.title}
-                />
+                <img src={feature.img} className="card-img-top" alt={feature.title} />
                 <div className="card-body">
                   <h5 className="card-title">{feature.title}</h5>
                   <p className="card-text">{feature.description}</p>

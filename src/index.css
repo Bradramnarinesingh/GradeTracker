@@ -157,7 +157,7 @@ p {
 
   .navbar {
     width: 100%;
-    background-color: #212529bd !important; /* Semi-transparent black for scrolled state */
+    background-color: #21252900 !important; /* Semi-transparent black for scrolled state */
     border-radius: 0; /* No border radius */
     top: 10px;
     position: fixed;
@@ -181,6 +181,11 @@ p {
     border-radius: 15px; /* Rounded corners */
     transition: all 0.2s ease-in-out; /* Smooth transition for all changes */
     top: 15px;
+  }
+
+  /* Applying a blue background color when the navbar is toggled at the top */
+  .navbar.navbar-expand-lg.fixed-top.navbar-top-clicked {
+    background-color: #212529bd !important; /* Blue color */
   }
 
   .nav-link {
