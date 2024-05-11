@@ -1,0 +1,227 @@
+/* Reset and override styles for body and html */
+html, body {
+  padding: 0px 60px; /* Adds 80px horizontal padding */
+  margin: 0; /* Removes default margin */
+  overflow-x: hidden; /* Prevents horizontal scroll caused by the padding */
+  background-color: #e7e7e7;
+}
+
+
+/* General application styling to enforce background color */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This will push the footer to the bottom */
+  min-height: 100vh; /* Ensures it takes at least the height of the viewport */
+  background-color: #f4f4f4; /* Light grey background for better contrast */
+}
+
+
+/* Specific header styles */
+.App-header {
+  display: flex;
+  flex-direction: column; /* Keeps items stacked vertically */
+  align-items: flex-start; /* Aligns items to the start of the container (left side) */
+  justify-content: center; /* Centers the content vertically */
+  padding: 60px 20px;
+  color: white;
+  background-color: #202c44; /* Lighter grey for the header */
+  min-height: 80vh;
+  padding-left: 100px; /* Increase left padding to shift content more to the left */
+}
+
+/* Styling for h1 to ensure visibility */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem; /* Add more space below the header */
+}
+
+/* Paragraph styling for contrast */
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #ffffff;
+  max-width: 600px;
+}
+
+.App-header h1, p {
+  text-align: left; /* Ensures text aligns to the left */
+  margin-left: 50px;
+}
+
+.card-text{
+  margin-left: 0px;
+  text-align: center;
+}
+
+/* Card styles */
+.card {
+  margin: 20px auto;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: calc(100% - 48px);
+  max-width: 300px;
+  min-height: 87%;  /* Ensures minimum height for visual consistency */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.card-img-top {
+  width: 100%; /* Full width of the card */
+  height: 220px;
+  object-fit: cover; /* Ensures image covers the area well */
+  background-color: #f0f0f0; /* Placeholder background if no image */
+}
+
+.card-body {
+  padding: 15px; /* Padding inside the card */
+}
+
+.card-title {
+  margin-bottom: 10px; /* Space between title and text */
+  font-size: 18px; /* Larger font size for title */
+  color: #333; /* Darker color for better readability */
+}
+
+.card-text {
+  color: #666; /* Lighter text for the body */
+  font-size: 14px; /* Appropriate font size for body text */
+}
+
+
+
+.navbar {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #212529bd !important;
+  backdrop-filter: blur(10px); /* Apply blur effect to navbar */
+  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+  max-width: 600px;
+  padding: 12px;
+  border-radius: 20px;
+}
+
+
+.navbar-toggler {
+  border: none; /* Remove default border */
+  outline: none; /* Remove focus outline */
+}
+
+.navbar-brand {
+  color: white; /* Text color for the brand */
+  font-weight: bold; /* Bold font for the brand */
+}
+
+.nav-link {
+  color: white; /* Text color for navigation links */
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #ccc; /* Change color on hover and focus */
+  text-decoration: none; /* No underline on hover */
+}
+
+.sign-in-btn {
+  margin-left: auto; /* Pushes the button to the right side of the navbar */
+  background-color: #dc3545; /* Bootstrap danger color for the button background */
+  border-color: #dc3545; /* Bootstrap danger color for the border */
+  color: white; /* White text color */
+}
+
+
+.mt-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+
+  html, body {
+    padding: 0;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0) !important; /* Solid black when at the top */
+    border-radius: 0; /* No border radius */
+    top: 10px;
+    position: fixed;
+    transition: all 0.2s ease-in-out; /* Smooth transition for all changes */
+  }
+  
+  .navbar-scrolled {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #212529bd !important; /* Semi-transparent black for scrolled state */
+    color: white; /* Adjusted for visibility */
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 40px); /* Adjust width */
+    max-width: 600px; /* Set max-width to limit width on larger screens */
+    padding: 12px;
+    border-radius: 15px; /* Rounded corners */
+    transition: all 0.2s ease-in-out; /* Smooth transition for all changes */
+  }
+  
+  .nav-link {
+    padding-bottom: 20px;
+  }
+  .App-header {
+    padding: 60px 50px;
+    min-height: 72vh;
+  }
+
+  .sign-in-btn {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+
+  .App-header h1, p {
+    margin-left: 0;
+  }
+
+  /* Show the sign-in button when the navbar is expanded */
+  .navbar-collapse.show + .sign-in-btn {
+    display: inline-block; /* Show the button when the navbar is expanded */
+}
+}
+
+
+
+
+/* Footer styles */
+.footer {
+  width: 100%;
+  background-color: #343a40; /* Dark background to match the theme */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Ensure footer sticks to the bottom */
+}
+
