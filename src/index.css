@@ -204,7 +204,7 @@ p {
   }
 
   .navbar-toggler.open .toggler-bar:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
+    transform: translateY(10px) rotate(-135deg);
   }
 
   .navbar-toggler.open .toggler-bar:nth-child(2) {
@@ -212,16 +212,12 @@ p {
     transform: rotate(135deg); /* Rotate the second bar to form an "X" */
   }
 
-  .navbar-toggler.open .toggler-bar:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
-  }
-
   .toggler-bar {
     display: block;
-    width: 20px; /* Make the bars thinner */
+    width: 28px; /* Make the bars thinner */
     height: 2px; /* Make the bars thinner */
     background: #fff;
-    margin: 4px 0;
+    margin: 8px 0;
     transition: transform 0.1s ease;
   }
 
