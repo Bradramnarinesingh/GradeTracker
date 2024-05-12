@@ -190,8 +190,20 @@ p {
 
   /* Applying a blue background color when the navbar is toggled at the top */
   .navbar.navbar-expand-lg.fixed-top.navbar-top-clicked {
-    background-color: #212529bd !important;
-    transition: all 0.2s ease-in-out; /* Smooth transition for all changes */
+    transition: all .2s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(33, 37, 41, .7411764705882353) !important;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    padding: 12px;
+    border-radius: 15px;
+    top: 15px;
   }
 
   .nav-link {
