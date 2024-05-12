@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ab4ab84314f1d416bfbf80ca3f348c7",
+    "revision": "d90a02287d0bcc9034e8e7181b06ed5e",
     "url": "/GradeTracker/index.html"
   },
   {
-    "revision": "9a609026158c178896b3",
+    "revision": "df3e7b9ecdd9c8de26a7",
     "url": "/GradeTracker/static/css/main.b1b3450c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GradeTracker/static/js/3.177faaa1.chunk.js"
   },
   {
-    "revision": "9a609026158c178896b3",
-    "url": "/GradeTracker/static/js/main.f07c0fc9.chunk.js"
+    "revision": "df3e7b9ecdd9c8de26a7",
+    "url": "/GradeTracker/static/js/main.c4899454.chunk.js"
   },
   {
     "revision": "e4592665342ad138ab11",

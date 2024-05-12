@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/GradeTracker/static/css/main.b1b3450c.chunk.css",
-    "main.js": "/GradeTracker/static/js/main.f07c0fc9.chunk.js",
-    "main.js.map": "/GradeTracker/static/js/main.f07c0fc9.chunk.js.map",
+    "main.js": "/GradeTracker/static/js/main.c4899454.chunk.js",
+    "main.js.map": "/GradeTracker/static/js/main.c4899454.chunk.js.map",
     "runtime~main.js": "/GradeTracker/static/js/runtime~main.c323d60e.js",
     "runtime~main.js.map": "/GradeTracker/static/js/runtime~main.c323d60e.js.map",
     "static/js/2.2618833d.chunk.js": "/GradeTracker/static/js/2.2618833d.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.177faaa1.chunk.js": "/GradeTracker/static/js/3.177faaa1.chunk.js",
     "static/js/3.177faaa1.chunk.js.map": "/GradeTracker/static/js/3.177faaa1.chunk.js.map",
     "index.html": "/GradeTracker/index.html",
-    "precache-manifest.b4e80d985d4be7fbafc9cd3071f1df24.js": "/GradeTracker/precache-manifest.b4e80d985d4be7fbafc9cd3071f1df24.js",
+    "precache-manifest.a961a3a1740441e94ee50f1a47ffa39e.js": "/GradeTracker/precache-manifest.a961a3a1740441e94ee50f1a47ffa39e.js",
     "service-worker.js": "/GradeTracker/service-worker.js",
     "static/css/main.b1b3450c.chunk.css.map": "/GradeTracker/static/css/main.b1b3450c.chunk.css.map",
     "static/media/logo.svg": "/GradeTracker/static/media/logo.06e73328.svg",
