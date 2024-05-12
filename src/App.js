@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import vis from "./visualize.webp"; // Image for Visualize Performance
@@ -44,6 +43,10 @@ function App() {
     setIsOpen(!isOpen); // Toggle the state of the navbar
   };
 
+  const closeNavbar = () => {
+    setIsOpen(false); // Close the navbar when a link is clicked
+  };
+
   const navbarClass = () => {
     if (!isScrolled && isOpen) {
       return "navbar-top-clicked";
@@ -56,10 +59,8 @@ function App() {
 
   return (
     <div className="App">
-      <nav
-        className={`navbar navbar-expand-lg navbar fixed-top ${navbarClass()}`}
-      >
-        <a className="navbar-brand" href="#home">
+      <nav className={`navbar navbar-expand-lg navbar fixed-top ${navbarClass()}`}>
+        <a className="navbar-brand" href="#home" onClick={closeNavbar}>
           <img src={logo} height="30" alt="logo" />
           Grade Tracker
         </a>
@@ -74,20 +75,13 @@ function App() {
           <span className="toggler-bar"></span>
           <span className="toggler-bar"></span>
         </button>
-        <div
-          className={`${isOpen ? "show" : "collapse"} navbar-collapse`}
-          id="navbarNav"
-        >
+        <div className={`${isOpen ? "show" : "collapse"} navbar-collapse`} id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#home">
-                Home
-              </a>
+              <a className="nav-link" href="#home" onClick={closeNavbar}>Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#features">
-                Features
-              </a>
+              <a className="nav-link" href="#features" onClick={closeNavbar}>Features</a>
             </li>
           </ul>
           <button className="btn btn-danger sign-in-btn">Sign In</button>
