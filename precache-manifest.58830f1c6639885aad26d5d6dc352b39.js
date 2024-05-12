@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d90a02287d0bcc9034e8e7181b06ed5e",
+    "revision": "b1faae48a486e2757d81e633d59f8745",
     "url": "/GradeTracker/index.html"
   },
   {
