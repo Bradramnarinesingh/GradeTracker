@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/GradeTracker/static/css/main.b1b3450c.chunk.css",
+    "main.css": "/GradeTracker/static/css/main.9b57e53a.chunk.css",
     "main.js": "/GradeTracker/static/js/main.c4899454.chunk.js",
     "main.js.map": "/GradeTracker/static/js/main.c4899454.chunk.js.map",
     "runtime~main.js": "/GradeTracker/static/js/runtime~main.c323d60e.js",
@@ -10,9 +10,9 @@
     "static/js/3.177faaa1.chunk.js": "/GradeTracker/static/js/3.177faaa1.chunk.js",
     "static/js/3.177faaa1.chunk.js.map": "/GradeTracker/static/js/3.177faaa1.chunk.js.map",
     "index.html": "/GradeTracker/index.html",
-    "precache-manifest.58830f1c6639885aad26d5d6dc352b39.js": "/GradeTracker/precache-manifest.58830f1c6639885aad26d5d6dc352b39.js",
+    "precache-manifest.8c6fcb3f7de89f8e2b066e4d258a007f.js": "/GradeTracker/precache-manifest.8c6fcb3f7de89f8e2b066e4d258a007f.js",
     "service-worker.js": "/GradeTracker/service-worker.js",
-    "static/css/main.b1b3450c.chunk.css.map": "/GradeTracker/static/css/main.b1b3450c.chunk.css.map",
+    "static/css/main.9b57e53a.chunk.css.map": "/GradeTracker/static/css/main.9b57e53a.chunk.css.map",
     "static/media/logo.svg": "/GradeTracker/static/media/logo.06e73328.svg",
     "static/media/setGoals.webp": "/GradeTracker/static/media/setGoals.fefeafc2.webp",
     "static/media/trackGrades.webp": "/GradeTracker/static/media/trackGrades.cece866f.webp",
