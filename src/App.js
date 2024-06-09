@@ -92,7 +92,7 @@ function App() {
         <p>
           Grade Tracker is designed to help students monitor their academic
           performance by managing assessment weights and tracking grades against
-          their goals.
+          their goals while saving their current grades for later use and better academic planning.
         </p>
       </header>
       <div className="container mt-5" id="features">
